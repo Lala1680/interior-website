@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../../assets/logo.png";
 
 const NavLinks = [
@@ -51,9 +50,7 @@ const Navbar = () => {
         {/* Button section */}
 
         <div>
-          <button className="primary-btn">
-            Try for free
-          </button>
+          <button className="primary-btn">Try for free</button>
         </div>
       </div>
     </>

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaSquareWebAwesomeStroke } from "react-icons/fa6";
 import { AiOutlineDollar } from "react-icons/ai";
 import { PiFlowerTulipFill } from "react-icons/pi";
