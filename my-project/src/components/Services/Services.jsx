@@ -1,6 +1,8 @@
 import { FaSquareWebAwesomeStroke } from "react-icons/fa6";
 import { AiOutlineDollar } from "react-icons/ai";
 import { PiFlowerTulipFill } from "react-icons/pi";
+import { motion } from "framer-motion";
+import { SlideUp } from "../../animation/animate";
 
 const ServiceCard = [
   {
@@ -10,6 +12,7 @@ const ServiceCard = [
       "Exclusive spas, fully-equipped gymnasium, indoor swimming pools, tennis court etc",
     icon: <FaSquareWebAwesomeStroke />,
     link: "#",
+    delay: 0.2,
   },
   {
     id: 2,
@@ -18,6 +21,7 @@ const ServiceCard = [
       "boasting a cost of living index of 85, rendering it the most affordable option.",
     icon: <AiOutlineDollar />,
     link: "#",
+    delay: 0.4,
   },
   {
     id: 3,
@@ -26,6 +30,7 @@ const ServiceCard = [
       "We offer the best services for our clients, through our team and partners.",
     icon: <PiFlowerTulipFill />,
     link: "#",
+    delay: 0.6,
   },
 ];
 const Services = () => {
@@ -34,18 +39,33 @@ const Services = () => {
       <div className="container py-20">
         {/* heading section */}
         <div className="text-center space-y-2 max-w-[350px] mx-auto mb-8">
-          <h1 className="text-3xl font-bold font-serif">What we provide</h1>
-          <p className="text-gray-500 text-sm">
+          <motion.h1
+            variants={SlideUp(0.2)}
+            initial="initial"
+            whileInView={"animate"}
+            className="text-3xl font-bold font-serif"
+          >
+            What we provide
+          </motion.h1>
+          <motion.p
+            variants={SlideUp(0.4)}
+            initial="initial"
+            whileInView={"animate"}
+            className="text-gray-500 text-sm"
+          >
             Bring your dream home to life with one-on-one design and hand picked
             products
-          </p>
+          </motion.p>
         </div>
 
         {/* card section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {ServiceCard.map((card) => {
             return (
-              <div
+              <motion.div
+                variants={SlideUp(card.delay)}
+                initial="initial"
+                whileInView={"animate"}
                 key={card.id}
                 className="space-y-4 border-[1px] border-black/30 p-6 hover:bg-black hover:text-white hover:shadow-[7px_7px_0_0_#6c6c6c] duration-300"
               >
@@ -60,7 +80,7 @@ const Services = () => {
                 >
                   Learn More
                 </a>
-              </div>
+              </motion.div>
             );
           })}
         </div>

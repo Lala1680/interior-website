@@ -1,9 +1,15 @@
 import Logo from "../../assets/logo.png";
 import { FaMessage, FaPhone } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import { SlideLeft } from "../../animation/animate";
 
 const Footer = () => {
   return (
-    <footer>
+    <motion.footer
+      variants={SlideLeft(0.2)}
+      initial="initial"
+      whileInView="animate"
+    >
       <div className="container py-11">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company info */}
@@ -73,7 +79,7 @@ const Footer = () => {
           <a href="#">India code</a>
         </p>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 
