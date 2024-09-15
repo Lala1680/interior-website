@@ -67,7 +67,7 @@ const Services = () => {
                 initial="initial"
                 whileInView={"animate"}
                 key={card.id}
-                className="space-y-4 border-[1px] border-black/30 p-6 hover:bg-black hover:text-white hover:shadow-[7px_7px_0_0_#6c6c6c] duration-300"
+                className="space-y-4 border-[1px] border-black/30 px-6 py-12 hover:bg-black hover:text-white hover:shadow-[7px_7px_0_0_#6c6c6c] duration-300"
               >
                 <span className="inline-block text-xl border-black border-[1px] rounded-full p-3">
                   {card.icon}

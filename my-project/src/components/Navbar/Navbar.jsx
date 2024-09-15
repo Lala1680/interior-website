@@ -31,7 +31,7 @@ const Navbar = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className="container py-4 flex justify-between items-center"
+        className="container py-6 flex justify-between items-center"
       >
         {/* Logo section */}
         <div className="flex items-center gap-3">
@@ -46,7 +46,7 @@ const Navbar = () => {
               <a
                 key={link.id}
                 href={link.link}
-                className="inline-block mx-4 text-base font-semibold"
+                className="inline-block mx-4 text-lg font-semibold"
               >
                 {link.title}
               </a>
@@ -56,7 +56,7 @@ const Navbar = () => {
         {/* Button section */}
 
         <div>
-          <button className="primary-btn">Try for free</button>
+          <button className="primary-btn">Try For Free</button>
         </div>
       </motion.div>
     </>

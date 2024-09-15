@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 md:min-h-[520px] gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:min-h-[600px] gap-10">
           {/* Text section */}
           <div className="flex flex-col justify-center gap-7 md:pr-8 xl:pr-52 text-center md:text-left pt-20 md:pt-0 px-10">
             <motion.h1
@@ -50,7 +50,7 @@ const Hero = () => {
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
               src={HeroPng}
               alt=""
               className="w-[80%] md:w-[700px] object-cover"

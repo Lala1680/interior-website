@@ -32,22 +32,22 @@ const Banner2 = () => {
               whileInView="animate"
               className="flex gap-3"
             >
-              <div className="max-w-[90px] space-y-1">
-                <p className="text-xl font-bold font-serif">15</p>
+              <div className="max-w-[80px] space-y-2">
+                <p className="text-2xl font-bold font-serif">15</p>
                 <p className="text-gray-500 text-sm">Years of Experience</p>
               </div>
-              <div className="max-w-[90px] space-y-1">
-                <p className="text-xl font-bold font-serif">350</p>
+              <div className="max-w-[80px] space-y-2">
+                <p className="text-2xl font-bold font-serif">350</p>
                 <p className="text-gray-500 text-sm">Projects Completed</p>
               </div>
-              <div className="max-w-[90px] space-y-1">
-                <p className="text-xl font-bold font-serif">25</p>
+              <div className="max-w-[80px] space-y-2">
+                <p className="text-2xl font-bold font-serif">25</p>
                 <p className="text-gray-500 text-sm">Awards Gained</p>
               </div>
             </motion.div>
             <div>
               <motion.button
-                variants={SlideUp(0.8)}
+                variants={SlideUp(0.6)}
                 initial="initial"
                 whileInView="animate"
                 className="primary-btn bg-black text-white shadow-[5px_5px_0_0_#6c6c6c]"
@@ -61,7 +61,7 @@ const Banner2 = () => {
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
               src={Banner1}
               alt=""
               className="w-[95%] md:w-full mx-auto"

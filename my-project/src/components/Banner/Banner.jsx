@@ -12,7 +12,7 @@ const Banner = () => {
             <motion.img
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
               src={Banner1}
               alt=""
               className="w-[95%] md:w-full mx-auto"

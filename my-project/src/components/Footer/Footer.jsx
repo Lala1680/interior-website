@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="space-y-3 font-semibold">
             <div className="flex items-center space-x-3">
               <img src={Logo} alt="" className="w-6" />
-              <span className="text-2xl font-semibold">Interior</span>
+              <span className="text-xl font-semibold">Interior</span>
             </div>
             <p>Belagavi, Karnataka, India</p>
             <p>@ 2024 TCJ all rights reserved</p>
@@ -27,13 +27,13 @@ const Footer = () => {
               <h1 className="text-xl font-semibold">About Us</h1>
               <ul className="text-sm space-y-4">
                 <li>
-                  <a href="#">Our story</a>
+                  <a href="#">Our Story</a>
                 </li>
                 <li>
                   <a href="#">Designer</a>
                 </li>
                 <li>
-                  <a href="#">Craftsmanship</a>
+                  <a href="#">Craftmanship</a>
                 </li>
                 <li>
                   <a href="#">Sustainability</a>
@@ -44,13 +44,13 @@ const Footer = () => {
               <h1 className="text-xl font-semibold">Support</h1>
               <ul className="text-sm space-y-4">
                 <li>
-                  <a href="#">FAQ</a>
+                  <a href="#">FAQ's</a>
                 </li>
                 <li>
                   <a href="#">Shipping & Returns</a>
                 </li>
                 <li>
-                  <a href="#">Care guide</a>
+                  <a href="#">Care Guide</a>
                 </li>
                 <li>
                   <a href="#">Warranty</a>
@@ -74,8 +74,8 @@ const Footer = () => {
           </div>
         </div>
         {/* Copyright section */}
-        <p className="text-center text-xs font-semibold border-t-2 mt-5 pt-2">
-          <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> |{" "}
+        <p className="text-center text-xs font-semibold border-t-2 mt-5 pt-6">
+          <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> |
           <a href="#">India code</a>
         </p>
       </div>

@@ -35,7 +35,7 @@ const Testimonial = () => {
           variants={SlideUp(0.2)}
           initial="initial"
           whileInView="animate"
-          className="text-3xl font-bold font-serif"
+          className="text-4xl font-bold font-serif"
         >
           Words from our customers
         </motion.h1>
@@ -50,8 +50,8 @@ const Testimonial = () => {
         </motion.p>
       </div>
       {/* Testimonial cards */}
-      <div className="bg-black py-12 container ">
-        <div className=" grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="bg-black p-12 container ">
+        <div className=" grid grid-cols-1 md:grid-cols-3 gap-6">
           {TestimonialData.map((card) => {
             return (
               <motion.div
@@ -61,7 +61,7 @@ const Testimonial = () => {
                 key={card.id}
                 className="border-[1px] border-gray-500 px-5  py-10 text-white group hover:bg-white duration-300"
               >
-                <div className="flex gap-3 items-center">
+                <div className="flex flex-row gap-3 items-center">
                   <img
                     src={card.img}
                     alt=""
@@ -69,15 +69,17 @@ const Testimonial = () => {
                   />
 
                   <div>
-                    <p className="text-sm font-bold font-serif group-hover:text-black">
+                    <p className="text-sm font-bold  group-hover:text-black">
                       {card.name}
                     </p>
-                    <p className="text-gray-400 text-xs">{card.designation}</p>
+                    <p className="text-gray-400 text-xs group-hover:text-black">
+                      {card.designation}
+                    </p>
 
                     <div className="text-xs mt-2">⭐️⭐️⭐️⭐️⭐️</div>
                   </div>
                 </div>
-                <div className="mt-5 border-t-2 border-gray-500/40 pt-5 w-[300px] ">
+                <div className="mt-5 border-t-2 border-gray-500/40 pt-5 ">
                   <p className="text-gray-300 text-xs group-hover:text-black duration-300">
                     {card.text}
                   </p>

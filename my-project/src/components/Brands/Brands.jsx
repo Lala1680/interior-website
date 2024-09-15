@@ -17,7 +17,7 @@ const Brands = () => {
             whileInView={"animate"}
             src={Brand1}
             alt="brand"
-            className="w-[110px]"
+            className="w-[110px] md:w-[200px]"
           />
           <motion.img
             variants={SlideLeft(0.4)}
@@ -25,7 +25,7 @@ const Brands = () => {
             whileInView={"animate"}
             src={Brand2}
             alt="brand"
-            className="w-[110px]"
+            className="w-[110px] md:w-[200px]"
           />
           <motion.img
             variants={SlideLeft(0.6)}
@@ -33,7 +33,7 @@ const Brands = () => {
             whileInView={"animate"}
             src={Brand3}
             alt="brand"
-            className="w-[110px]"
+            className="w-[110px] md:w-[200px]"
           />
           <motion.img
             variants={SlideLeft(0.8)}
@@ -41,7 +41,7 @@ const Brands = () => {
             whileInView={"animate"}
             src={Brand4}
             alt="brand"
-            className="w-[110px]"
+            className="w-[110px] md:w-[200px]"
           />
           <motion.img
             variants={SlideLeft(1.0)}
@@ -49,7 +49,7 @@ const Brands = () => {
             whileInView={"animate"}
             src={Brand5}
             alt="brand"
-            className="w-[110px]"
+            className="w-[110px] md:w-[200px]"
           />
         </div>
       </div>
